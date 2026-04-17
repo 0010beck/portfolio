@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #0c0c0c;
+  background-color: #000000;
   color: white;
   display: flex;
   justify-content: center;
@@ -14,6 +14,12 @@ body {
   color: white;
   text-decoration: none;
   font-size: 11pt;
+}
+
+
+p {
+
+  text-align: center;
 }
 
 .cv {
@@ -83,6 +89,7 @@ a {
 
 .content {
    padding-bottom: 50px;
+   
 }
 
 .text:hover {
@@ -122,6 +129,7 @@ figure:hover .text {
   max-width: 700px;
   text-align: center;
   min-height: 100vh;
+  
 
 }
 
@@ -136,6 +144,7 @@ figure:hover .text {
   text-align: justify;
   font-size: 11pt;
 }
+
 
 nav {
   padding: 50px;
