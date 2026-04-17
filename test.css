@@ -32,6 +32,18 @@ pre {
   font-size: 11pt;
 }
 
+img.horizontal-shake:hover {
+  animation: horizontal-shaking 0.35s infinite;
+}
+
+@keyframes horizontal-shaking {
+ 0% { transform: translateX(0) }
+ 25% { transform: translateX(1px) }
+ 50% { transform: translateX(-1px) }
+ 75% { transform: translateX(1px) }
+ 100% { transform: translateX(0) }
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
