@@ -1,17 +1,12 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #070707;
-
-   /* background-image: url(https://images6.alphacoders.com/885/885542.png);
-    background-repeat: no-repeat;
-    background-size:contain;
-    background-attachment: fixed; */
+  background-color: #0c0c0c;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 60px;
+  padding-bottom: 80px;
 
 }
 
@@ -37,11 +32,25 @@ img.horizontal-shake:hover {
 }
 
 @keyframes horizontal-shaking {
- 0% { transform: translateX(0) }
- 25% { transform: translateX(1px) }
- 50% { transform: translateX(-1px) }
- 75% { transform: translateX(1px) }
- 100% { transform: translateX(0) }
+  0% {
+    transform: translateX(0)
+  }
+
+  25% {
+    transform: translateX(1px)
+  }
+
+  50% {
+    transform: translateX(-1px)
+  }
+
+  75% {
+    transform: translateX(1px)
+  }
+
+  100% {
+    transform: translateX(0)
+  }
 }
 
 .grid {
@@ -54,18 +63,15 @@ img.horizontal-shake:hover {
 .grid img {
   width: 200px;
   height: 130px;
-   object-fit: cover;
-   object-position: center;
+  object-fit: cover;
+  object-position: center;
 }
 
-.grid img:hover {
-  background-color: #0f0f0f10;
-}
 
 h1 {
   font-size: 11pt;
-  background-color: #FF80F7;
-  color: black;
+  background-color: #1d1d1d;
+  color: white;
   padding: 5px;
   margin: 0px 0px 10px 0px;
 }
@@ -75,41 +81,41 @@ a {
   color: white;
 }
 
-a:hover {
+.content {
+   padding-bottom: 50px;
+}
+
+.text:hover {
   text-decoration: underline;
   background-color: #FF80F7;
   color: black;
 }
 
+
 .work {
   max-width: 600px;
   justify-content: center;
   margin: auto;
-  color:#8e8e8e;
+  color: #8e8e8e;
 }
 
 .card {
   position: relative;
   overflow: hidden;
- 
+
 }
 
 figcaption {
   padding: 10px;
 }
 
-figcaption a:hover {
+
+figure:hover .text {
   text-decoration: underline;
   background-color: #FF80F7;
   color: black;
 }
 
-figure:hover a {
-  
- text-decoration: underline;
-  background-color: #FF80F7;
-  color: black;
-}
 
 .container {
   width: 100%;
@@ -120,11 +126,11 @@ figure:hover a {
 }
 
 .hero {
- display: grid;
+  display: grid;
   place-items: center;
   height: 60vh;
 }
- 
+
 
 .container p {
   text-align: justify;
@@ -132,7 +138,6 @@ figure:hover a {
 }
 
 nav {
-
   padding: 50px;
 }
 
@@ -167,21 +172,20 @@ footer {
   text-align: center;
   font-size: 11pt;
   text-decoration: none;
-  padding: 15px 0px 15px 0px;
+  padding: 10px 0px 10px 0px;
 }
 
 footer a {
-    color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 
 }
 
 
-/* 📱 Tablet */
 @media (max-width: 768px) {
 
   .grid {
-    grid-template-columns: 1fr; /* 1 column */
-    justify-items: center; /* center items */
+    grid-template-columns: 1fr;
+    justify-items: center;
   }
 
   .grid img {
@@ -202,11 +206,10 @@ footer a {
   }
 }
 
-/* 📱 Mobile */
 @media (max-width: 480px) {
 
   body {
-    align-items: flex-start; /* prevents weird vertical squish */
+    align-items: flex-start;
   }
 
   .grid img {
