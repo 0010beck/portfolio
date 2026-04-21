@@ -104,6 +104,7 @@ a {
   justify-content: center;
   margin: auto;
   color: #8e8e8e;
+  line-height: 1.3;
 }
 
 .card {
@@ -148,6 +149,7 @@ figure:hover .text {
 
 nav {
   padding: 50px;
+  align-items: center;
 }
 
 nav a {
