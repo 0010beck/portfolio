@@ -98,6 +98,13 @@ a {
   color: black;
 }
 
+hr {
+  margin-top: 3em;
+
+   border: none;
+  border-top: 1px solid #f4f4f4;
+}
+
 
 .work {
   max-width: 600px;
